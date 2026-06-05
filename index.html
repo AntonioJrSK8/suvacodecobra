@@ -4,8 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Forrozão Suvaco de Cobra — banda de Forró Pé de Serra de São Luís. Show NORDESTINAMENTE: raiz, alegria e tradição maranhense.">
+  <meta name="theme-color" content="#120a06">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Suvaco de Cobra | Forrozão de São Luís">
+  <meta property="og:description" content="Forró pé de serra de São Luís — show NORDESTINAMENTE. Contrate o Forrozão Suvaco de Cobra para o seu evento.">
+  <meta property="og:image" content="images/banda-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Suvaco de Cobra | Forrozão de São Luís">
+  <meta name="twitter:description" content="Forró pé de serra de São Luís — show NORDESTINAMENTE. Contrate o Forrozão Suvaco de Cobra.">
+  <meta name="twitter:image" content="images/banda-hero.png">
   <title>Suvaco de Cobra | Forrozão de São Luís</title>
   <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="preload" as="image" href="images/banda-hero.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -15,7 +26,10 @@
   <header class="header" id="topo">
     <nav class="nav container">
       <a href="#topo" class="logo" aria-label="Forrozão do Suvaco de Cobra — início">
-        <img src="images/logo.png" alt="Forrozão do Suvaco de Cobra" width="220" height="68" fetchpriority="high" decoding="async">
+        <picture>
+          <source srcset="images/logo.webp" type="image/webp">
+          <img src="images/logo.png" alt="Forrozão do Suvaco de Cobra" width="220" height="68" fetchpriority="high" decoding="async">
+        </picture>
       </a>
       <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -35,7 +49,10 @@
   <main>
     <section class="hero" aria-label="Apresentação">
       <div class="hero-bg">
-        <img src="images/banda-hero.png" alt="Forrozão Suvaco de Cobra em apresentação" width="1200" height="800">
+        <picture>
+          <source srcset="images/banda-hero.webp" type="image/webp">
+          <img src="images/banda-hero.png" alt="Forrozão Suvaco de Cobra em apresentação" width="1200" height="800" fetchpriority="high" decoding="async">
+        </picture>
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content container">
@@ -83,7 +100,10 @@
           </ul>
         </div>
         <figure class="sobre-foto">
-          <img src="images/banda-1.png" alt="Integrantes do Forrozão Suvaco de Cobra" loading="lazy" width="600" height="800">
+          <picture>
+            <source srcset="images/banda-1.webp" type="image/webp">
+            <img src="images/banda-1.png" alt="Integrantes do Forrozão Suvaco de Cobra" loading="lazy" width="600" height="800" decoding="async">
+          </picture>
           <figcaption>Forrozão Suvaco de Cobra</figcaption>
         </figure>
       </div>
@@ -130,7 +150,10 @@
     <section class="section show" id="show">
       <div class="container show-grid">
         <figure class="show-foto">
-          <img src="images/banda-2.png" alt="Show ao vivo — Suvaco de Cobra no palco" loading="lazy" width="600" height="800">
+          <picture>
+            <source srcset="images/banda-2.webp" type="image/webp">
+            <img src="images/banda-2.png" alt="Show ao vivo — Suvaco de Cobra no palco" loading="lazy" width="600" height="800" decoding="async">
+          </picture>
         </figure>
         <div class="show-texto">
           <span class="section-label">O Show</span>
@@ -163,27 +186,27 @@
       <div class="container">
         <span class="section-label">Próximos shows</span>
         <h2>Agenda</h2>
-        <p class="agenda-intro">Confira onde o Forrozão Suvaco de Cobra vai estar em maio e junho. Chegue cedo e garanta o seu forró!</p>
+        <p class="agenda-intro">Confira onde o Forrozão Suvaco de Cobra vai estar em junho. Chegue cedo e garanta o seu forró!</p>
 
         <div class="agenda-lista">
-          <article class="agenda-item">
-            <div class="agenda-data">
-              <time datetime="2026-05-29"><span class="agenda-dia">29</span><span class="agenda-mes">Mai</span></time>
-            </div>
-            <div class="agenda-info">
-              <h3>Arraial dos Amantes do Forró</h3>
-              <p class="agenda-local">Grill Rei de França</p>
-              <p class="agenda-hora">19h</p>
-            </div>
-          </article>
-
           <article class="agenda-item">
             <div class="agenda-data">
               <time datetime="2026-06-02"><span class="agenda-dia">02</span><span class="agenda-mes">Jun</span></time>
             </div>
             <div class="agenda-info">
               <h3>Arraial de Coração pra Coração</h3>
+              <p class="agenda-local">São Cristóvão</p>
               <p class="agenda-hora">19h</p>
+            </div>
+          </article>
+
+          <article class="agenda-item">
+            <div class="agenda-data">
+              <time datetime="2026-06-03"><span class="agenda-dia">03</span><span class="agenda-mes">Jun</span></time>
+            </div>
+            <div class="agenda-info">
+              <h3>Restaurante Picuí Tábua de Carne</h3>
+              <p class="agenda-hora">20h</p>
             </div>
           </article>
 
@@ -202,9 +225,42 @@
               <time datetime="2026-06-07"><span class="agenda-dia">07</span><span class="agenda-mes">Jun</span></time>
             </div>
             <div class="agenda-info">
-              <h3>Arraial Estrada de Ribamar</h3>
+              <h3>Arraial do Juveneire</h3>
               <span class="agenda-badge">Evento particular</span>
               <p class="agenda-hora">14h</p>
+            </div>
+          </article>
+
+          <article class="agenda-item">
+            <div class="agenda-data">
+              <time datetime="2026-06-12"><span class="agenda-dia">12</span><span class="agenda-mes">Jun</span></time>
+            </div>
+            <div class="agenda-info">
+              <h3>Forró dos Namorados</h3>
+              <p class="agenda-local">Picuí Tábua de Carne</p>
+              <p class="agenda-hora">20h</p>
+            </div>
+          </article>
+
+          <article class="agenda-item agenda-item--particular">
+            <div class="agenda-data">
+              <time datetime="2026-06-13T12:00"><span class="agenda-dia">13</span><span class="agenda-mes">Jun</span></time>
+            </div>
+            <div class="agenda-info">
+              <h3>Evento Privado</h3>
+              <span class="agenda-badge">Evento particular</span>
+              <p class="agenda-hora">12h</p>
+            </div>
+          </article>
+
+          <article class="agenda-item agenda-item--particular">
+            <div class="agenda-data">
+              <time datetime="2026-06-13T21:00"><span class="agenda-dia">13</span><span class="agenda-mes">Jun</span></time>
+            </div>
+            <div class="agenda-info">
+              <h3>Evento Privado Angelim</h3>
+              <span class="agenda-badge">Evento particular</span>
+              <p class="agenda-hora">21h</p>
             </div>
           </article>
 
@@ -215,6 +271,16 @@
             <div class="agenda-info">
               <h3>Arraial do Ipem</h3>
               <p class="agenda-hora">22h</p>
+            </div>
+          </article>
+
+          <article class="agenda-item">
+            <div class="agenda-data">
+              <time datetime="2026-06-19"><span class="agenda-dia">19</span><span class="agenda-mes">Jun</span></time>
+            </div>
+            <div class="agenda-info">
+              <h3>Grill Rei de França</h3>
+              <p class="agenda-hora">20h</p>
             </div>
           </article>
 
@@ -231,12 +297,33 @@
 
           <article class="agenda-item agenda-item--particular">
             <div class="agenda-data">
+              <time datetime="2026-06-21"><span class="agenda-dia">21</span><span class="agenda-mes">Jun</span></time>
+            </div>
+            <div class="agenda-info">
+              <h3>Aniversário Nara</h3>
+              <p class="agenda-local">Pedrinhas</p>
+              <span class="agenda-badge">Evento particular</span>
+              <p class="agenda-hora">14h</p>
+            </div>
+          </article>
+
+          <article class="agenda-item agenda-item--particular">
+            <div class="agenda-data">
               <time datetime="2026-06-22"><span class="agenda-dia">22</span><span class="agenda-mes">Jun</span></time>
             </div>
             <div class="agenda-info">
               <h3>Arraial da Maria do São Bernardo</h3>
               <span class="agenda-badge">Evento particular</span>
               <p class="agenda-hora">19h</p>
+            </div>
+          </article>
+
+          <article class="agenda-item">
+            <div class="agenda-data">
+              <time datetime="2026-06-24"><span class="agenda-dia">24</span><span class="agenda-mes">Jun</span></time>
+            </div>
+            <div class="agenda-info">
+              <h3>Prefeitura de Santa Luzia do Paruá</h3>
             </div>
           </article>
 
@@ -261,20 +348,35 @@
         <span class="section-label">Galeria</span>
         <h2>Fotos da banda</h2>
         <div class="galeria-grid">
-          <button class="galeria-item" type="button" data-src="images/banda-hero.png" data-alt="Suvaco de Cobra — apresentação com sanfona e zabumba">
-            <img src="images/banda-hero.png" alt="Apresentação com sanfona e zabumba" loading="lazy">
+          <button class="galeria-item" type="button" data-src="images/banda-hero.webp" data-alt="Suvaco de Cobra — apresentação com sanfona e zabumba">
+            <picture>
+              <source srcset="images/banda-hero.webp" type="image/webp">
+              <img src="images/banda-hero.png" alt="Apresentação com sanfona e zabumba" loading="lazy" decoding="async">
+            </picture>
           </button>
-          <button class="galeria-item galeria-item--wide" type="button" data-src="images/banda-3.png" data-alt="Banda completa no palco">
-            <img src="images/banda-3.png" alt="Banda completa no palco" loading="lazy">
+          <button class="galeria-item galeria-item--wide" type="button" data-src="images/banda-3.webp" data-alt="Banda completa no palco">
+            <picture>
+              <source srcset="images/banda-3.webp" type="image/webp">
+              <img src="images/banda-3.png" alt="Banda completa no palco" loading="lazy" decoding="async">
+            </picture>
           </button>
-          <button class="galeria-item" type="button" data-src="images/banda-4.png" data-alt="Integrantes com acordeon">
-            <img src="images/banda-4.png" alt="Integrantes com acordeon" loading="lazy">
+          <button class="galeria-item" type="button" data-src="images/banda-4.webp" data-alt="Integrantes com acordeon">
+            <picture>
+              <source srcset="images/banda-4.webp" type="image/webp">
+              <img src="images/banda-4.png" alt="Integrantes com acordeon" loading="lazy" decoding="async">
+            </picture>
           </button>
-          <button class="galeria-item" type="button" data-src="images/banda-1.png" data-alt="Grupo em ambiente tradicional">
-            <img src="images/banda-1.png" alt="Grupo em ambiente tradicional" loading="lazy">
+          <button class="galeria-item" type="button" data-src="images/banda-1.webp" data-alt="Grupo em ambiente tradicional">
+            <picture>
+              <source srcset="images/banda-1.webp" type="image/webp">
+              <img src="images/banda-1.png" alt="Grupo em ambiente tradicional" loading="lazy" decoding="async">
+            </picture>
           </button>
-          <button class="galeria-item" type="button" data-src="images/banda-2.png" data-alt="Show ao vivo com iluminação de palco">
-            <img src="images/banda-2.png" alt="Show ao vivo" loading="lazy">
+          <button class="galeria-item" type="button" data-src="images/banda-2.webp" data-alt="Show ao vivo com iluminação de palco">
+            <picture>
+              <source srcset="images/banda-2.webp" type="image/webp">
+              <img src="images/banda-2.png" alt="Show ao vivo" loading="lazy" decoding="async">
+            </picture>
           </button>
         </div>
       </div>
@@ -357,7 +459,10 @@
           </div>
         </div>
         <figure class="contato-foto">
-          <img src="images/banda-4.png" alt="Suvaco de Cobra — contrate o show" loading="lazy" width="600" height="800">
+          <picture>
+            <source srcset="images/banda-4.webp" type="image/webp">
+            <img src="images/banda-4.png" alt="Suvaco de Cobra — contrate o show" loading="lazy" width="600" height="800" decoding="async">
+          </picture>
         </figure>
       </div>
     </section>
@@ -367,12 +472,12 @@
     <div class="container patrocinadores-inner">
       <p class="patrocinadores-label">Apoio</p>
       <ul class="patrocinadores-lista">
-        <li><img src="images/patrocinadores/governo-maranhao.png" alt="Governo do Maranhão" width="150" height="40" loading="lazy"></li>
-        <li><img src="images/patrocinadores/orleans-brandao.png" alt="Orleans Brandão" width="120" height="40" loading="lazy"></li>
-        <li><img src="images/patrocinadores/florencio-neto.png" alt="Florêncio Neto — Deputado Estadual" width="120" height="40" loading="lazy"></li>
-        <li><img src="images/patrocinadores/juscelino-filho.png" alt="Juscelino Filho — Deputado Federal" width="120" height="40" loading="lazy"></li>
-        <li><img src="images/patrocinadores/weverton.png" alt="Weverton — Senador" width="120" height="40" loading="lazy"></li>
-        <li><img src="images/patrocinadores/octavio-soeiro.png" alt="Octávio Soeiro — Vereador" width="110" height="40" loading="lazy"></li>
+        <li><picture><source srcset="images/patrocinadores/governo-maranhao.webp" type="image/webp"><img src="images/patrocinadores/governo-maranhao.png" alt="Governo do Maranhão" width="150" height="40" loading="lazy" decoding="async"></picture></li>
+        <li><picture><source srcset="images/patrocinadores/orleans-brandao.webp" type="image/webp"><img src="images/patrocinadores/orleans-brandao.png" alt="Orleans Brandão" width="120" height="40" loading="lazy" decoding="async"></picture></li>
+        <li><picture><source srcset="images/patrocinadores/florencio-neto.webp" type="image/webp"><img src="images/patrocinadores/florencio-neto.png" alt="Florêncio Neto — Deputado Estadual" width="120" height="40" loading="lazy" decoding="async"></picture></li>
+        <li><picture><source srcset="images/patrocinadores/juscelino-filho.webp" type="image/webp"><img src="images/patrocinadores/juscelino-filho.png" alt="Juscelino Filho — Deputado Federal" width="120" height="40" loading="lazy" decoding="async"></picture></li>
+        <li><picture><source srcset="images/patrocinadores/weverton.webp" type="image/webp"><img src="images/patrocinadores/weverton.png" alt="Weverton — Senador" width="120" height="40" loading="lazy" decoding="async"></picture></li>
+        <li><picture><source srcset="images/patrocinadores/octavio-soeiro.webp" type="image/webp"><img src="images/patrocinadores/octavio-soeiro.png" alt="Octávio Soeiro — Vereador" width="110" height="40" loading="lazy" decoding="async"></picture></li>
       </ul>
     </div>
   </section>
@@ -390,6 +495,21 @@
     <img src="" alt="" id="lightbox-img">
   </div>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "Forrozão Suvaco de Cobra",
+    "description": "Banda de Forró Pé de Serra de São Luís — MA. Show NORDESTINAMENTE.",
+    "genre": "Forró Pé de Serra",
+    "areaServed": "São Luís, Maranhão",
+    "image": "images/banda-hero.png",
+    "url": "https://github.com/AntonioJrSK8/suvacodecobra",
+    "sameAs": ["https://www.instagram.com/forrozaosuvacodecobraslz"],
+    "telephone": "+55-98-98114-5339",
+    "email": "suvacodecobraslz@gmail.com"
+  }
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>

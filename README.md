@@ -18,14 +18,23 @@ Acesse: `http://localhost:8080`
 
 ## Estrutura
 
-- `index.html` — página principal
-- `css/styles.css` — estilos
-- `js/main.js` — menu mobile, lightbox da galeria
-- `images/` — fotos da banda
+```
+suvacodecobra/
+├── index.html          # Página principal
+├── css/styles.css      # Estilos
+├── js/main.js          # Menu mobile, lightbox da galeria
+├── images/             # Fotos da banda (.png + .webp otimizado)
+├── robots.txt          # Instruções para buscadores
+└── sitemap.xml         # Mapa do site
+```
 
-## Contato (conforme portfólio)
+## Atualizar a agenda
+
+Os shows ficam na seção `#agenda` do `index.html`. Para cada evento, copie um bloco `<article class="agenda-item">` e ajuste data, título, local e horário. Use a classe `agenda-item--particular` e o badge `Evento particular` para shows privados.
+
+## Contato
 
 - Telefone: (98) 98114-5339
 - E-mail: suvacodecobraslz@gmail.com
 - Instagram: [@forrozaosuvacodecobraslz](https://www.instagram.com/forrozaosuvacodecobraslz)
-"# suvacodecobra" 
+- WhatsApp: [Chamar no WhatsApp](https://wa.me/5598981145339)

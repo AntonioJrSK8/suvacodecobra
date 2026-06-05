@@ -7,6 +7,7 @@
   const lightboxFechar = document.querySelector(".lightbox-fechar");
   const galeriaItens = document.querySelectorAll(".galeria-item");
   const anoEl = document.getElementById("ano");
+  let ultimoFoco = null;
 
   if (anoEl) anoEl.textContent = new Date().getFullYear();
 
@@ -33,16 +34,20 @@
 
   function abrirLightbox(src, alt) {
     if (!lightbox || !lightboxImg) return;
+    ultimoFoco = document.activeElement;
     lightboxImg.src = src;
     lightboxImg.alt = alt;
     lightbox.hidden = false;
     document.body.style.overflow = "hidden";
+    lightboxFechar?.focus();
   }
 
   function fecharLightbox() {
-    if (!lightbox) return;
+    if (!lightbox || lightbox.hidden) return;
     lightbox.hidden = true;
     document.body.style.overflow = "";
+    lightboxImg.src = "";
+    ultimoFoco?.focus();
   }
 
   galeriaItens.forEach((item) => {
@@ -60,6 +65,6 @@
   }
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") fecharLightbox();
+    if (e.key === "Escape" && lightbox && !lightbox.hidden) fecharLightbox();
   });
 })();
