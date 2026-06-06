@@ -424,22 +424,30 @@ ul {
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
   gap: 1rem;
+  max-width: 920px;
+  margin-inline: auto;
 }
 
 .card-membro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 118px;
   background: var(--cor-card);
   border: 1px solid var(--cor-borda);
   border-radius: var(--raio);
   padding: 1.25rem 1rem;
   text-align: center;
-  transition: transform var(--transicao), border-color var(--transicao);
+  transition: transform var(--transicao), border-color var(--transicao), box-shadow var(--transicao);
 }
 
 .card-membro:hover {
   transform: translateY(-4px);
   border-color: var(--cor-laranja);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .card-membro h3 {
@@ -447,22 +455,14 @@ ul {
   font-size: 1.35rem;
   letter-spacing: 0.04em;
   color: var(--cor-dourado);
+  line-height: 1.1;
 }
 
-.card-membro p {
+.card-cargo {
   font-size: 0.85rem;
   color: var(--cor-texto-suave);
-  margin-top: 0.25rem;
-}
-
-.card-membro.destaque {
-  border-color: var(--cor-verde);
-  background: linear-gradient(145deg, var(--cor-card), rgba(45, 106, 79, 0.15));
-}
-
-.apelido {
-  font-style: italic;
-  color: var(--cor-verde-claro) !important;
+  margin-top: 0.45rem;
+  line-height: 1.4;
 }
 
 /* Show */
@@ -852,12 +852,43 @@ ul {
   text-align: center;
 }
 
-.footer-marca {
-  font-family: var(--font-display);
-  font-size: 1.75rem;
-  letter-spacing: 0.04em;
-  color: var(--cor-dourado);
-  margin-bottom: 0.25rem;
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-logo {
+  display: inline-flex;
+  margin-bottom: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--raio);
+  background: linear-gradient(
+    135deg,
+    rgba(245, 235, 224, 0.08) 0%,
+    rgba(244, 162, 97, 0.05) 100%
+  );
+  border: 1px solid rgba(244, 162, 97, 0.18);
+  transition: transform var(--transicao), border-color var(--transicao);
+}
+
+.footer-logo:hover,
+.footer-logo:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(244, 162, 97, 0.35);
+}
+
+.footer-logo img {
+  height: 72px;
+  width: auto;
+  max-width: min(240px, 70vw);
+  object-fit: contain;
+  mix-blend-mode: lighten;
+  filter:
+    contrast(1.12)
+    saturate(1.15)
+    drop-shadow(0 0 12px rgba(244, 162, 97, 0.35));
 }
 
 .footer p {
